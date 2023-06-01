@@ -3,6 +3,15 @@
 
 """
 Simple DBF viewer for Linux by dosbox.
+
+Use:
+
+dbf_view_dos [options] --dbf_filename=/path/to/dbf/file
+
+Options:
+    --viewer=   DBF viewer. CDBF/BDBFS-EN/BDBFS-RU
+    --no-exit   Don't exit of dosbox automatically
+    --no-wait   Don't wait for dosbox to exit
 """
 
 import sys
@@ -11,7 +20,7 @@ import os.path
 import platform
 import getopt
 
-__version__ = (0, 0, 0, 2)
+__version__ = (0, 0, 0, 3)
 
 DOSBOX_CMD_FMT = 'dosbox -c \"mount C: %s\" -c \"mount D: /usr/share/dbf_view_dos\" -c \"D:\\rk.com\" -c "D:\\%s %s" %s %s'
 
