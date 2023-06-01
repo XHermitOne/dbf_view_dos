@@ -1,0 +1,1324 @@
++----------------------+
+| 1. About             |
++----------------------+
+
+CDBF is a powerful database viewer and editor that lets
+individuals and business users access databases directly
+without programming.
+
+This small and handy utility offers everything you need
+for working with database files and even more: one of the
+reviewers for Ziff-Davis Software Library noted that the
+program seems to be overloaded with features - so many of
+them are available in this seemingly simple tool.
+
+Unlike other similar tools, CDBF doesn't separate the viewing
+and editing modes: while viewing a table you can at any time
+click on the field to be modified and make all necessary changes.
+
+The program supports all types of DBF files (dBase III,
+dBase IV, FoxPro, Visual FoxPro) and their memo fields.
+
+You can export the database tables to text files, DBF files,
+Clipper and FoxPro source files (.prg) and SQL Server scripts
+(.sql).
+
+Other CDBF features include:
++ Sorting and filtering records
++ Ability to edit memo-fields
++ Ability to print database tables
++ Powerful search and replace
++ Automatic OEM/ANSI character set detection
++ Cutting, copying, pasting and erasing data in selected cells
++ Exporting, deleting, recalling and summing selected records
+and more...
+
+There are several different versions of CDBF:
+        - CDBF for Windows, GUI version
+        - CDBF for Windows, Console version
+        - CDBF for DOS, Console version
+        - CDBF for Linux, Console version
+
+
+
++----------------------+
+| 2. Main Window       |
++----------------------+
+
+F1...F10
+        F1        Help
+        F2        Browse/Fields
+        F3        Open a database
+        F4        Edit on/off
+        F5        Append with confirmation
+        F6        Insert with confirmation
+        F7        Search
+        F8        Delete with confirmation
+        F9        Menu
+        F10       Quit
+
+
+Alt + F1...F10
+        Alt+F1
+        Alt+F2    Database Info
+        Alt+F3    Filter
+        Alt+F4    Go to field
+        Alt+F5    User screen
+        Alt+F6    Go to record
+        Alt+F7    Find next
+        Alt+F8    Pack
+        Alt+F9    Column setup
+        Alt+F10
+
+
+Ctrl + F1...F10
+        Ctrl+F1   Lock/Unlock
+        Ctrl+F2   Sum
+        Ctrl+F3   Create a new database
+        Ctrl+F4   Modify structure
+        Ctrl+F5   Append (duplicate current record)
+        Ctrl+F6   Insert (duplicate current record)
+        Ctrl+F7   Search and Replace
+        Ctrl+F8   Zap
+        Ctrl+F9   Export
+        Ctrl+F10  Truncate
+
+
+Shift + F1...F10
+        Shift+F1  Content
+        Shift+F2  Field info
+        Shift+F3  Recent files
+        Shift+F4  Calculator
+        Shift+F5  Append without confirmation
+        Shift+F6  Insert without confirmation
+        Shift+F7  Find next
+        Shift+F8  Delete without confirmation
+        Shift+F9  Save setup
+        Shift+F10 Menu
+
+
+Alt + ...
+        Alt+A     Aliases
+        Alt+1     Remove filter
+        Alt+0     Window list
+
+
+Ctrl + ...
+        Ctrl+B    Create .bak file on request
+        Ctrl+D    Hide or show deleted records
+        Ctrl+E    Set filter by the current value
+        Ctrl+S    Sort
+        Ctrl+[    Copy record to the internal clipboard
+        Ctrl+]    Paste record from the internal clipboard
+
+
+Other keys
+        Arrows, Home, End, PgUp, PgDn,
+        Ctrl+Arrows, Ctrl+Home, Ctrl+End,
+        Ctrl+PgUp, Ctrl+PgDn                   Move cursor
+
+        Grey *    Select/Unselect cells
+
+        Delete    Delete or recall the current record
+        Insert    Select/unselect the current record
+
+
+
++----------------------+
+| 3. Menu File         |
++----------------------+
+
+Open
+        F3
+        Opens an existing database. You can open multiple
+        databases at once. If the database is already open,
+        CDBF will bring its window up.
+
+Recent files
+        Shows the list of recently opened files.
+
+Close
+        Closes an opened database.
+
+Create
+        Ctrl-F3
+        Creates a new database.
+
+Modify structure
+        Ctrl-F4
+        Modifies structure of an opened database.
+
+Refresh
+        Ctrl-R
+        Checks record count, repaints main window, re-filters
+        and re-sorts the database.
+
+Fields Info
+        Shift-F2
+        Displays information on database fields and lets you edit
+        column headers (aliases).
+
+Database Info
+        Alt-F2
+        Displays information on current database.
+
+Save setup
+        Shift-F9
+        Saves column settings and database modes:  aliases,
+        reverse mode.
+
+Print
+        Ctrl-P
+        Prints a database.
+
+Exit
+        Alt-X
+        Exits from CDBF.
+
+
+
++----------------------+
+| 4. Menu View         |
++----------------------+
+
+Browse
+        F2
+        View database as a table.
+
+Fields
+        F2
+        View database as a single record.
+
+Reverse
+        View database in reverse order. Some commands
+        are not available in this mode (Delete, Truncate etc).
+
+Aliases
+        Alt-A
+        Show user-defined headers instead of real field names.
+
+Columns
+        Alt-F9
+        Set preferences for columns in a database.
+
+Memo
+        Displays memo-field editor.
+
+Hide deleted records
+        Ctrl-D
+        Hide or show records marked as deleted.
+
+Read only
+        Switch on read-only mode.
+
+Ansi charset
+        F12
+        Set ANSI charset for reviewing database.
+
+OEM charset
+        F12
+        Set OEM charset for reviewing database.
+
+Header charset
+        Shift-F12
+        Set ANSI charset for field headers.
+        Set OEM charset for field headers.
+
+Selection
+        Select/unselect record
+                You can select and unselect a record
+                by pressing INS (insert key).
+                Then you can
+                        export selected records (Tools-Export)
+                        print selected records (File-Print)
+                        fill a field of selected records (Tools-Fill)
+                        mark as deleted etc. (Tools-Group-...)
+                        show only selected records (Vies-Selection-...)
+                        sum selected records (Tools-Sum)
+
+        Show selected records only
+                This command lets you view only selected records.
+                It acts as a filter.
+
+        Clear selection
+                This command clears your selection.
+
+Options
+        F9
+        Displays Options dialog box. For more information
+        check the Options help section.
+
+
+
++----------------------+
+| 5. Menu Edit         |
++----------------------+
+
+Cut
+        Deletes currently selected cells from the database
+        and moves them to the clipboard. You can paste them
+        to other locations, to another file, or to another
+        program.
+
+Copy
+        Copies currently selected cells to the clipboard.
+        You can paste them to other locations, to another
+        file or to another program.
+
+Paste
+        Pastes data from the clipboard to the database.
+
+Delete
+        Deletes currently selected cells.
+
+Find
+        F7, Shift-F7
+        Searches database for a text string. The search is
+        performed in the direction specified. If the string
+        is not found, a message is displayed. For more
+        information please check the Find dialog help section.
+
+Next find
+        Alt-F7
+        Repeats the last find.
+
+Find and Replace
+        Ctrl-F7
+        Searches database for a text string and replaces it with
+        another text string. For more information, please
+        check the Replace dialog help section.
+
+Go to record
+        Alt-F6
+        Moves the cursor to the specified record.
+
+Go to field
+        Alt-F4
+        Moves the cursor to the specified field.
+
+Copy record
+        Ctrl-[
+        Copies the current record to the clipboard.
+
+Paste record
+        Ctrl-]
+        Pastes a record from the clipboard into the database.
+        You can insert it as a new record or overwrite
+        the current record.
+
+
+
++----------------------+
+| 6. Menu Commands     |
++----------------------+
+
+Append
+        F5
+        Appends an empty record to the end of the database.
+        Shift-F5 appends a record without prompting.
+
+Insert
+        F6
+        Inserts an empty record before the current record.
+        Shift-F6 inserts a record without prompting.
+
+Delete
+        F8
+        Deletes the current record from the database.
+        Shift-F8 deletes a record without prompting.
+
+Pack all
+        Alt-F8
+        Packs the database: deletes records marked as deleted.
+        Both DBF-file and memo-file will be packed.
+
+Zap
+        Ctrl-F8
+        Deletes all records from the database.
+
+Truncate
+        Ctrl-F10
+        Deletes from the database all records following the
+        current record.
+
+Duplicate current record...
+
+        Append Ctrl-F5
+                Appends a record to the end of the database and
+                copies into it information from the current record.
+
+        Insert Ctrl-F6
+                Inserts a record before the current record and
+                copies into it information from the current record.
+
+Pack...
+
+        DBF file
+                Packs the database: deletes records marked as
+                deleted. Only DBF file will be packed.
+
+        Memo file
+                Packs the database: deletes unused blocks from memo-file.
+
+
+
++----------------------+
+| 7. Menu Tools        |
++----------------------+
+
+Sum
+        Ctrl-F2
+        Sums data in the current column.
+
+Calculator
+        Shift-F4
+        Calls the calculator. For more information please
+        see the Calculator help section.
+
+Sort
+        Ctrl-S
+        Sorts the database singly or by several fields.
+        For more information please see the Sort help section.
+
+Filter
+        Alt-F3
+        Filters records in the database. For more information
+        please see the Filter help section.
+
+Fill
+        Fills the current field with a specified value.
+        For more information please see the Fill help section.
+
+Export
+        Ctrl-F9
+        Exports records from the database to other formats.
+        For more information please see the Export help section.
+
+Encoding
+        Encodes and decodes a database and makes it possible to
+        work with an encrypted database the same as with a normal
+        database. For more information please see the Encoding
+        help section.
+
+All
+        Allows you to mark for deleting, recall or inverse
+        a deletion mark for all records.
+
+Group
+        Allows you to mark for deleting, recall or inverse
+        a deletion mark for records with specified numbers.
+
+Append from
+        Appends data from another .DBF file or .TXT file.
+        For more information please see the Append from help section.
+
+Header editor
+        Calls a hexadecimal editor to edit the database header.
+
+Hex panel
+        Displays content of a field as a hexadecimal value.
+
+
+
++----------------------+
+| 8. Menu Favorites    |
++----------------------+
+
+Add to favorites
+        Adds current database to favorites list.
+
+Organize favorites
+        Displays a dialog box, which allows you to add,
+        remove, update or change the order of files in your
+        favorites list.
+
+
+
++----------------------+
+| 9. Menu Help         |
++----------------------+
+
+Content
+        F1
+        Brings up a searchable index of topics for
+        which help is available.
+
+Internet Homepage
+        Use this command to visit the CDBF homepage.
+
+Email support
+        Use this command to start the default mail program.
+
+About
+        This command presents the CDBF dialog box which
+        displays the copyright notice and version number
+        of your copy of CDBF.
+
+
+
++----------------------+
+| 10. Open dialog      |
++----------------------+
+
+Opens an existing database.
+You can open multiple databases at one time.
+If a database is already open, CDBF will bring its window up.
+
+
+
++----------------------+
+| 11. Recent files     |
++----------------------+
+
+Displays a list of recently opened files.
+Select one and press Enter.
+
+
+
++----------------------+
+| 12. Fields info      |
++----------------------+
+
+Shift-F2
+The field info dialog box displays information on the
+fields of a database. You can copy this information to
+a file in different formats:
+        As is, SQL, PRG, HTML, DBF, XML, Miva.
+
+This box also lets you define field headers (aliases, or
+pseudonyms) which you can then use instead of real names
+in CDBF. CDBF can use these names in its work.
+
+
+
++----------------------+
+| 13. Database Info    |
++----------------------+
+
+This command displays information about a database which
+can be copied to the clipboard.
+
+
+
++----------------------+
+| 14. Columns          |
++----------------------+
+
+The column dialog box is used to:
+- change order of columns (Alt + Arrows)
+- hide some columns
+- make some columns read-only
+- make some columns fixed. Such columns don't scroll.
+
+Space or Insert : toggle a checkbox.
+Gray +          : switch on all checkboxes in a column.
+Gray -          : switch off all checkboxes in a column.
+Gray *          : toogle all checkboxes in a column.
+
+
+
++----------------------+
+| 15. Memo editor      |
++----------------------+
+
+The memo editor, a simple text editor, is used to view
+and edit information in memo fields.
+
+Ctrl-Y deletes a line.
+Ctrl-U undeletes a line.
+
+
+
++----------------------+
+| 16. Text file viewer |
++----------------------+
+
+The text file viewer, a simple text editor, is used to view
+the content of a text file but not to edit it.
+
+
+
++----------------------+
+| 17. Options          |
++----------------------+
+
+Start mode
+        CDBF can be used in either of two modes:
+      Browse (show records in table form) or
+      Fields (show single records).
+        When you open a database, CDBF shows it
+        according to your choice.
+
+Date format
+        Specifies the format for Date and DateTime fields
+        displayed in the program.
+
+Date delimiter
+        Specifies the delimiter for Date and DateTime fields
+        displayed in the program. You can choose the system
+        delimiter or define your own.
+
+Alignment
+        Allows you to align the data in character fields
+        after editing.
+
+Codepage
+        If the database header does not specify the codepage,
+        CDBF can attempt to detect the codepage automatically
+        or it can be defined manually.
+
+Memo-fields
+        CDBF can display state or content of the memo-field.
+
+.BAK-files
+        Off - Do not create .bak files.
+        Current directory - Create .bak file in the current directory.
+        %TEMP% directory  - Create .bak file in the %TEMP% directory.
+
+Delete moves down
+        Move cursor to a next record when Delete was pressed.
+
+Enter moves down
+        Move cursor to a next record when Enter was pressed
+        in the last field.
+
+Scrollbars
+        Display scrollbars.
+
+Progress bar
+        Display progress bar during long operations.
+
+Confirmations
+        Ask whether to save a database after pressing ESC or F10.
+
+Aliases mode
+        Use aliases when CDBF opens a database.
+
+Don't retain position
+        Do not return to current position after sorting or
+        filtering database.
+
+
+
++----------------------+
+| 18. Search           |
++----------------------+
+
+Find dialog allows you to find any string through
+the text of the database. Enter into the Find dialog box
+any text string that you want to search for in a database.
+
+By field
+        CDBF can find a string anywhere in a database or
+        in just one specified field.
+
+Ignore case
+        Uncheck this option if you want case-sensitive searching.
+
+Down
+        Check this option if you want to search downward
+        from the current position.
+
+Up
+        Check this option if you want to search upward
+        from the current position.
+
+All
+        Check this option if you want to search downward
+        from the beginning of the database.
+
+
+
++------------------------+
+| 19. Search and Replace |
++------------------------+
+
+Replace dialog allows you to replace any string
+through the text of the database.
+Enter into the Search and Replace dialog box any text
+string that you want to search for in a database, and
+the text that you want to replace it with.
+
+By field
+        CDBF can replace a string everywhere it occurs in a
+        database on in only a specified field.
+
+Ignore case
+        Uncheck this option if you want case-sensitive searching.
+
+Down
+        Check this option if you want to search downward
+        from the current position.
+
+Up
+        Check this option if you want to search upward
+        from the current position.
+
+All
+        Check this option if you want to search downward
+        from the beginning of database.
+
+
+
++----------------------+
+| 20. Go to record     |
++----------------------+
+
+To go to another record in the database, enter its number
+into the Go To Record dialog box.
+
+
+
++----------------------+
+| 21. Go to field      |
++----------------------+
+
+To move the cursor to another field in the database,
+select the field in the Go To Field dialog box and press
+Enter.
+
+
+
++--------------------------+
+| 22. Cut and Paste record |
++--------------------------+
+
+Ctrl-[  copies the current record to the clipboard.
+
+
+Ctrl-]  pastes record from the clipboard into the database.
+        You can insert it as a new record or overwrite the
+        current record.
+
+
+
++----------------------+
+| 23. Append           |
++----------------------+
+
+F5        appends an empty record to the end of the database.
+Shift-F5  appends an empty record without prompting.
+Ctrl-F5   appends a record to the end of the database
+          and copies into it information from the current
+          record.
+
+
+
++----------------------+
+| 24. Insert           |
++----------------------+
+
+F6        inserts an empty record before the current record.
+Shift-F6  inserts an empty record without prompting.
+Ctrl-F6   inserts a record before the current record and copies
+          into it information from the current record.
+
+
+
++----------------------+
+| 25. Delete           |
++----------------------+
+
+F8        deletes the current record from the database.
+Shift-F8  deletes the current record without prompting.
+
+
+
++----------------------+
+| 26. Pack             |
++----------------------+
+
+Alt-F8   Packs the database: deletes records marked as deleted.
+         Both DBF file and memo file will be packed.
+
+
+Pack DBF file
+         Packs the database: deletes records marked as deleted.
+         Only DBF file will be packed.
+
+Pack Memo file
+         Packs the database: deletes unused blocks from
+         memo file only.
+
+
+
++----------------------+
+| 27. Zap              |
++----------------------+
+
+Ctrl-F8  deletes all records from the database.
+
+
+
++----------------------+
+| 28. Truncate         |
++----------------------+
+
+Ctrl-F10  deletes records following the current record
+            from the database.
+
+
+
++----------------------+
+| 29. Sum              |
++----------------------+
+
+Sums data entered into the current column in fields
+defined in one of the following formats:  Numeric,
+Float, Currency, Double or Integer.
+
+Numbers entered as alphanumeric strings (characters) are
+not summed.
+
+CDBF can display:
+     the sum of all records
+     the sum not including deleted records
+     the sum only of deleted records.
+
+You can copy any of the sums to the clipboard.
+
+
+
++----------------------+
+| 30. Calculator       |
++----------------------+
+
+The calculator can calculate any expression which includes
+numbers, the mathematical expressions + - * / and
+parentheses ().
+Besides, you can use real field names inside the expression.
+
+To insert the results of calculation into a particular field,
+select the field in the combobox and then click OK.
+
+
+
++----------------------+
+| 31. Sort             |
++----------------------+
+
+Use the Sort dialog box to sort data by one or several fields.
+
+To sort by a single field, select 'field' in the combo-box
+and 'Sort by one field'.
+
+To sort by several fields, enter the field names delimited
+(separated) by semicolons and then select
+'Sort by several fields'.
+
+Ascending
+        Sorts forwards, i.e. A to Z, smallest
+        to largest, oldest to youngest.
+
+Descending
+        Sorts backwards, i.e. Z to A, largest
+        to smallest, youngest to oldest.
+
+Ignore case
+        Uncheck this option if you want case-sensitive sorting,
+        i.e. A = a, Z = z.
+
+
+
++----------------------+
+| 32. Filter           |
++----------------------+
+
+Use the Filter dialog box to select records based on some
+criterion.
+
+The following logical operations are allowed:
+        =         is equal to
+        <> or ><  is not equal to
+        >  or >>  is greater than
+        >=        is greater than or equal to
+        < or <<   is less than
+        <=        is less than or equal to
+        ~         entry of a substring (for string fields)
+        &         and
+        |         or
+
+The following functions can also be used in the filter:
+        ABS, ACOS, ASIN, ATAN, COSH, COS, EXP, LOG10, LOG,
+        POW10, ROUND, SINH, SIN, SQRT, SQR, TANH, TAN, TRUNC,
+        TRIM, LTRIM, RTRIM, SUBSTR, LEFT, RIGHT
+
+Ignore case
+        Uncheck this option if you want case-sensitive filter.
+
+Hide deleted records
+        Check this option if you want to hide records
+        marked as deleted.
+
+New filter
+        Check this option if you want to set a new filter.
+
+Merge with current filter
+        Check this option if you want to combine the current
+        filter with a new filter. You can make a compound
+        filter by combining simple filters.
+
+Understand brackets in the filter expression literally
+        Treat the characters '(' and ')' as normal characters.
+
+
+
++----------------------+
+| 33. Fill             |
++----------------------+
+
+Use the Fill dialog box to fill any field of a database
+with a particular value, including the four arithmetic
+operation symbols (+ - * /) and parentheses.
+Also, you can use real field names inside the expression.
+
+Enter an expression, select a field from the combo-box
+and press "OK".
+
+CDBF can also be used to fill numeric fields in a database
+with an ascending or descending value by selecting
+the type of progression and setting the step and
+maximum value (0 is ignored).
+
+
+
++----------------------+
+| 34. Export           |
++----------------------+
+
+Ctrl-F9
+Use this command to export data from CDBF to the formats:
+        TXT, SQL, PRG, XLS, HTML, DBF.
+
+Do the following:
+        - Select the Format.  Use the button Options to change the
+          options for the format that you selected.
+        - Select an output file.
+        - Switch on the desired options in Bands.
+        - Press OK.
+
+Existing file
+        When you select "Overwrite", CDBF deletes the output file
+        before starting.
+
+All records
+        Check this option to export all records in the database.
+
+Current record
+        Check this option to export only the current record.
+
+Following records
+        Check this option to export records that you
+        specify by number.
+
+Bands
+        Some export formats will ignore certain bands.
+        For example, when you export data to another DBF DBF file,
+        none of the options in this section except Detail
+        mean anything.
+
+        Structure:
+        CDBF prints the structure of the database.
+
+        Column headers:
+        Prints the field names.
+
+        Detail:
+        Prints the records.
+
+        Show output file:
+        Opens the output file as a .TXT or .DBF file.
+
+Copy deleted record
+        Check this option to export records marked
+        as deleted.
+
+Copy blank records
+        Check this option to export blank records.
+
+Memo as text
+        Check this option option to export the contents
+        of memo fields.
+
+Deletion mark
+        Check this option to see deletion marks in an output file.
+
+Record number
+        Check this option to see the record numbers in the
+        output file.
+
+As is / Ansi / OEM
+        Used to change the charset of the output file (information).
+
+
+
++----------------------+
+| 35. TXT options      |
++----------------------+
+
+No trim          Do not remove leading and trailing spaces
+                 from character strings.
+Trim left        Remove leading spaces from character strings.
+Trim right       Remove trailing spaces from character strings.
+All trim         Remove leading and trailing spaces from
+                 character strings.
+
+Quoting          Enclose character fields in quotes.
+
+Single quotes    If "Quoting" is switched on then use single quotes.
+Double quotes    If "Quoting" is switched on then use double quotes.
+
+Delimiter        Insert a delimiter between fields.
+
+
+
++----------------------+
+| 36. PRG options      |
++----------------------+
+
+Single quotes    Enclose strings in single quotes - ''.
+Double quotes    Enclose strings in double qoutes - "".
+Square quotes    Enclose strings in square brackets - [].
+
+
+
++----------------------+
+| 37. SQL options      |
++----------------------+
+
+SQL2000         Use syntax which is compatible with MS SQL2000.
+
+Single quotes   Enclose strings in single quotes - ''.
+Double quotes   Enclose strings in double quotes - "".
+
+
+
++----------------------+
+| 38. HTM options      |
++----------------------+
+
+Header   - this file will be added to the beginning of the output.
+Footer   - this file will be added to the end of the output.
+
+
+
++----------------------+
+| 39. DBF options      |
++----------------------+
+
+These options are used when exporting memo fields.
+
+As is           The resulting DBF file will be of original type.
+dBase III       The resulting DBF file will be of dBase III type.
+FoxPro          The resulting DBF file will be of FoxPro type.
+dBase IV        The resulting DBF file will be of dBase IV type.
+Visual FoxPro   The resulting DBF file will be of Visual FoxPro type.
+
+BlockSize       Block size for memo-fields. Recommended values
+                are in the range 32..32768.
+
+
++----------------------+
+| 40. Encode database  |
++----------------------+
+
+With CDBF, you can "lock" your database with a password
+so that nobody can read or view it without your permission.
+To protect your database with a password, use the
+        "Tools - Encoding - Encode database"
+menu command.
+
+You will be prompted to enter the password you want
+to use to access your database.
+
+If you want to remove password protection, use the
+        "Tools - Encoding - Decode database"
+menu command.
+
+If you already have a password set for your database, use the
+        "Tools - Encoding - Define password"
+menu command for access to the information.
+
+
+
++----------------------+
+| 41. Define password  |
++----------------------+
+
+With CDBF, you can "lock" your database with a password
+so that nobody can read or view it without your permission.
+To protect your database with a password, use the
+        "Tools - Encoding - Encode database"
+menu command.
+
+You will be prompted to enter the password you want
+to use to access your database.
+If you want to remove password protection, use the
+        "Tools - Encoding - Decode database"
+menu command.
+
+If you already have a password set for your database, use the
+        "Tools - Encoding - Define password"
+menu command for access to the information.
+
+
+
++----------------------+
+| 42. Group            |
++----------------------+
+
+The Group dialog box is used to change a deletion mark
+for a group of records, so as to delete, recall, or invert
+records.
+
+
+
++----------------------+
+| 43. Append from      |
++----------------------+
+
+Allows you to append data from a DBF or TXT file
+to the current database.
+
+If the fields in an appended DBF file are of a different
+format, they will be automatically converted to
+a necessary format.
+
+Either of two formats can be used when appending data from
+TXT file:
+
+Delimited with...
+        Information in a fileis delimited by a specified
+        character. It's possible to specify one more symbol.
+
+SDF
+        Information in a file has no delimiters between fields.
+
+
+
++------------------------+
+| 44. Organize favorites |
++------------------------+
+
+Use this dialog box to add, remove, update
+or change the order of files in your favorites list.
+
+
+
++------------------------+
+| 45. Internet Homepage  |
++------------------------+
+
+Use this command to visit the CDBF homepage. 
+
+
+
++----------------------+
+| 46. Email support    |
++----------------------+
+
+
+Use this command to start the default mail program.           
+
+
+
++----------------------+
+| 47. Confirmations    |
++----------------------+
+
+Ask whether to save a database after pressing ESC or F10.
+
+Save       - Save and exit
+Don't save - Do not save and exit
+Cancel     - Continue editing
+
+
+
++----------------------+
+| 48. Lock             |
++----------------------+
+
+Toggles the the opening mode between Exclusive and Shared.
+
+
+
++----------------------+
+| 49. Pattern          |
++----------------------+
+
+Use this dialog box to specify the file types to be displayed.
+
+
+
++----------------------+
+| 50. Invalid Header   |
++----------------------+
+
+If the header of a database contains errors, you are asked
+whether you want to correct it.
+
+Correct  - correct the header and run CDBF.
+Continue - do not correct the header but do open the database
+           and run CDBF
+Cancel   - do not open the database.
+
+
+
++----------------------+
+| 51. Windows          |
++----------------------+
+
+To switch to another database, select the file name and
+press Enter.
+
+
+
++----------------------+
+| 52. History          |
++----------------------+
+
+Used to select a previously entered string.
+
+
+
++----------------------+
+| 53. Edit structure   |
++----------------------+
+
+Ctrl-F3 - Create a new database
+          This command is used to create a new database.
+
+Ctrl-F4 - Modify structure
+          This command is used to modify the structure of
+          a database.
+
+Edit field names, types or sizes, change the order of fields,
+delete fields and add new fields. When you are done, select OK.
+
+CDBF can create databases of the following formats:
+        dBase III
+        dBase IV
+        FoxPro
+        Visual FoxPro
+
+Choose the type of database to create by pressing F9 in
+this dialog box.
+
+If your database has memo fields, then you can set
+a Blocksize for the memo-fields. Recommended values are
+	64-128-256-512-1024-2048.
+dBASE III files always have 512-byte memo-field block size.
+
+You can set the optimal width of Character fields.
+CDBF will determine the longest entry in a field
+and suggest this value, but you need not accept this value.
+A field must be at least 10 characters long.
+
+You can save the structure in an external DBF file and then
+load this structure.
+
+Keyboard
+  F2         - Save structure
+  F3         - Load structure
+  F4         - Set optimal widths
+  Alt+Arrows - Move fields
+  F5         - Append field
+  F6         - Insert field
+  F8         - Delete field
+
+
+
++----------------------+
+| 54. Header editor    |
++----------------------+
+
+CDBF gives you a low-level facility to edit the header of a database
+in the hexadecimal editor.
+
+Generally speaking, it's not necessary to use this function. It requires
+some special knowledge about the structure of dbf files from you.
+But sometimes, when you know what you are doing, it could be helpful.
+
+
+
++----------------------+
+| 55. How to register? |
++----------------------+
+
+If you are interested in purchasing CDBF please visit our site:
+
+        http://www.whitetown.com/order.php3
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Personal license
+        Allows you to use CDBF by one person only (at work or at home
+        or both).
+
+Business license
+        Allows you to use CDBF by a small company on 2-10 computers.
+
+Site license
+        Allows you to use CDBF by a company on any number of computers,
+        but they must be located in one office.
+
+World-wide license
+        Allows you to use CDBF by one company on any number of computers
+        anywhere.
+
+Price-list:
+           Personal license  :   $35.00
+           Business license  :   $99.00
+           Site license      :  $199.00
+           World-wide license:  $399.00
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There are several different versions of CDBF:
+        - CDBF for Windows, GUI version
+        - CDBF for Windows, Console version
+        - CDBF for DOS, Console version
+        - CDBF for Linux, Console version
+
+Each version sells individually for the same price, but there
+is a discount if you purchase more than one version at a time.
+
+Also, registered users of one version who want to purchase
+another version should contact us for a special registration
+link which will give them a discount on other versions.
+
+Besides:
+- if you want to buy a bundle of CDBF different versions,
+  then you can do it with a noticeable discount.
+- if you are a registered user of any version of CDBF, then
+  you can buy another versions for a lower price.
+Just drop us a letter and we will give you a special
+registration link.
+        sales@whitetown.com
+
+Registered users of CDBF for DOS 2.23 or for Windows 1.05,
+or earlier versions of these programs, can get a free
+registration key file by emailing name, address, and
+registration date to:
+        sales@whitetown.com
+
+If you don't find the bundle you want, contact us and we
+will add it for you.
+        sales@whitetown.com
+
+Thank you very much for using CDBF!
+
+
+
++-------------------------+
+| 56. About the Publisher |
++-------------------------+
+
+WhiteTown Software is a privately owned company based in Akhtyrka,
+Ukraine. Founded in 1996, the company specializes in the development
+of accounting and automation tools for small and medium-sized businesses.
+
+Contact:
+Sergey Chehuta, WhiteTown Software
+Voice mail:     +380-5446-31677
+Fax:            +380-5446-97744
+Email:     sergey@whitetown.com
+Web:   http://www.whitetown.com

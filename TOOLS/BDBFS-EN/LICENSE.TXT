@@ -1,0 +1,56 @@
+      The BDBFS - DBF-File editor
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      License for use and distribution
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      The BDBFS is distributed as try-before-you-buy. This means:
+
+   1. All copyrights to BDBFS are exclusively owned by the author
+      - Yevgen Bondar.
+
+   2. Anyone may use this software during a test period of 40 days.
+      Following this test period of 40 days or less, if you wish
+      to continue to use BDBFS, you should register.
+
+   3. Once registered, the user is granted a non-exclusive license to 
+      use BDBFS on one computer (i.e. a single cpu), for any legal purpose, 
+      at a time. The registered BDBFS software may not be rented or 
+      leased, but may be permanently transferred, if the person receiving 
+      it agrees to terms of this license.  If the software is an update, 
+      the transfer must include the update and all previous versions. 
+
+   4. The BDBFS unregistered trial version, may be freely distributed,
+      with exceptions noted below, provided the distribution package is
+      not modified. No person or company may charge a fee for the
+      distribution of BDBFS without written permission from the copyright
+      holder. The BDBFS unregistered trial version may not be bundled or
+      distributed with any other package without written permission of
+      the copyright holder.
+
+   5. To register you must complete the registration form and send
+      it, with registration fee, to adress, signed in REGISTER.FRM.
+
+   6. THE BDBFS-EDITOR IS DISTRIBUTED "AS IS".  NO WARRANTY OF ANY
+      KIND IS EXPRESSED OR IMPLIED.  YOU USE AT YOUR OWN RISK.
+      THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS
+      OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR MISUSING
+      THIS SOFTWARE.
+
+   7. You may not use, copy, emulate, clone, rent, lease, sell, modify,
+      decompile, disassemble, otherwise reverse engineer, or transfer the
+      licensed program, or any subset of the licensed program, except as 
+      provided for in this agreement. Any such unauthorized use shall 
+      result in immediate and automatic termination of this license and
+      may result in criminal and/or civil prosecution.
+
+      All rights not expressly granted here are reserved by Yevgen Bondar.
+
+   8. Installing and using BDBFS signifies acceptance of these terms
+      and conditions of the license.
+
+   9. If you do not agree with the terms of this license you must remove
+      BDBFS files from your storage devices and cease to use the product.
+
+      Thank you for using BDBFS.
+
+					Yevgen Bondar

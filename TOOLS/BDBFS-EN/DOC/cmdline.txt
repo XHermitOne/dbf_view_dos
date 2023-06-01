@@ -1,0 +1,51 @@
+			Command Line switches
+			~~~~~~~~~~~~~~~~~~~~~
+
+	BDBFS <file name>[.DBF]. or <files mask>
+	   or <file name.INI>  (initialization file)
+	   or <file name.MEM>  (file of saved environment)
+		[/switches]
+
+Switches:
+
+	/BW - monochrome.
+
+	/i=<indexname> - loading a file together with specified index.
+
+	/FORCED - database processing without standard drivers.
+		  It supports Visual FoxPro, dBASE5, FlagShip etc.
+
+	/NTX or /SIXNTX  - set default RDD
+	/CDX or /SIXCDX
+	/MDX or /SIXMDX
+	/NSX or /SIXNSX
+
+	/CREATE - make new base.
+
+	/REINDEX - re-indexing compound index or specified index.
+
+	/REBUILD - full rebuild compound index.
+
+	/HTM[L] - generate HTML-file.
+	/XML - generate XML-file.
+	/XLS - generate XLS-file.
+
+	/PACK - pack the base.
+
+	/PRINT[=<file name>[.BPF]] - generate report.
+
+	/CHECK - header checking.
+
+	/STRUCT_PRIN[T]	- print the structure description to print device.
+	/STRUCT_FILE	- print the structure description to file.
+	/STRUCT_EXTE[NDED] - create the file in COPY STRU EXTENDED format.
+	/STRUCT_COPY	- create the empty file of same structure.
+	/STRUCT_PROG[RAM]- create the program generating this
+			   structure and tags of compound index.
+
+	/WIN or /ANSI - set ANSI codepage as default.
+
+	/RUN=<pluginname([parameters])> - start plugin when base
+					  will be opened
+
+Details - in ch.33 of Manual.

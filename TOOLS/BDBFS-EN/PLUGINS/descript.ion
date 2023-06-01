@@ -1,0 +1,21 @@
+ansi2oem.ini Ansi To Oem recoding
+oem2ansi.ini Oem to Ansi recoding
+dbfupper.ini Make all fields UPPER
+del_doub.ini Mark all non-unique records (in current order)
+sort_crt.ini Sort current base on current field
+sum_all.ini Sum all numeric fields
+
+app_new.ini Append from another base all records absent in current.
+mark_dbl.ini Mark all records containing in other
+relation.ini SET RELATION example
+
+fvi.ini Future value investment
+pvi.ini Present value investment
+
+scr_save.ini Screen-saver example
+sh_keys.ini Information about key codes
+
+bdbfs.ch bdbfs specific commands and definitions
+clipper.ch Common include file
+MAKEIND.INI Шаблон построения индексов
+

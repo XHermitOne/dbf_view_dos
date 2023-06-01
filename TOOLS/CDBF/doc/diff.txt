@@ -1,0 +1,41 @@
+CDBF. Differences between console versions.
+
+
+Ctrl+.
+        In the Windows version use '.' on the main keyboard.
+        In the other versions use '.' on the number pad.
+
+Database info dialog
+        In the Windows version clicking OK copies information to
+        the keyboard.
+        In the other versions clicking OK writes information to a
+        text file.
+
+Menu Edit, commands "Cut", "Copy", "Paste", "Delete"
+        The Windows version uses the system clipboard.
+        The other versions use an internal clipboard.
+
+Menu Help, command "Internet Homepage"
+        The Windows version lets you use your default web browser
+        to view the CDBF homepage.
+        The other versions only show information about the CDBF homepage.
+
+Menu Help, command "Email support"
+        The Windows version lets you send a message to support@whitetown.com
+        using your default e-mail client.
+        The other versions only show our e-mail address.
+
+Export to HTML
+        In the Windows version, at the end of Export, CDBF displays
+        the resulting HTML file with your default web browser.
+        In the other versions, at the end of Export, CDBF displays
+        a text version of the HTML file.
+
+Switching between files
+        Ctrl-Tab works anywhere.
+        Use Ctrl-Shift-Tab in Windows and DOS versions.
+        Use Alt-Tab in Linux version.
+
+Alt-F1..Alt-F12
+        Does not work in Linux version. It is OS-dependent limitation.
+

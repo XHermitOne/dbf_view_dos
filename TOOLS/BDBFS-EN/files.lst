@@ -1,0 +1,21 @@
+;List of files BDBFS 1.27
+
+files.lst - This file
+file_id.diz - General info
+bdbfs.exe - Main executable file
+bdbfs.hlp - Help-file
+bdbfs.reg - Windows installation file (RegEdit file)
+bdb_wclp.exe - Working with Clipboard under Windows2000/XP
+license.txt - License Agreement
+register.frm - Register form
+readme.txt - Brief installation description
+bdbfs.ico - Windows Icon
+DOC\whatsnew.htm - Last changes
+DOC\bdbfs.htm - Brief documentation
+DOC\cmdline.txt - Command line switches
+DOC\national.txt - Information for national languages supporting
+EXAMPLES\customer.dbf/fpt/cdx - test database file
+EXAMPLES\customer.aop - example of AutoOpen file
+EXAMPLES\customer.bpf - example of report form
+EXAMPLES\examples.ini - examples of ini-files possibilities
+PLUGINS\*.* - plug-ins examples

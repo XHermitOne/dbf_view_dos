@@ -1,0 +1,214 @@
+<html><head>
+<IMG align="right" SRC="bdbfs.ico">
+<title>News in last versions</title>
+<h2>
+	<font color="#6c1efe">
+	<I><U>NEWS IN LAST VERSIONS</u></i>
+	</font>
+	<font color="#080511">
+</h2>
+<STYLE>
+	TT {	color: blue	}
+</STYLE>
+</head>
+<body background="blobk.gif" link="#CC0033">
+<P><HR><pre>
+<b><i>Legend:</b></i>
+	[+] - new features
+	[!] - corrected bugs
+	[*] - changes
+</font>
+<P><HR>
+<b><u>04-Jul-2006	1.27f</u></b><br>
+[+] Toggle OEM/ANSI codepage on-fly (Ctrl+Tab).
+    Attention! If you defined your own sets in <a href='bdbfs.htm#p16'>ini-files</a> (_OEM_SET, _ANSI_SET),
+    it is necessary to redefine them to full 128-symbols sets.
+    Default codepage is defined in variable _Default_Cp. Codepage for concrete
+    database you can define in <a href='bdbfs.htm#p16_1'>AOP-file</a>(variable _DBF_CPage).
+    Corresponding <a href='bdbfs.htm#p16_n'>commands</a> are #CODEPAGE, #DEFAULTCODEPAGE.
+
+[+] <a href="bdbfs.htm#p33">Command line parameter</a> /WIN (/ANSI) defines codepage for current session.
+
+[+] ASCII-table is called on <tt>Ctrl+F10</tt> in all dialogues and at fields edition.
+
+[+] <a href="bdbfs.htm#p33">Command line parameter</a> /RUN is defined for plug-ins start.
+    Example: BDBFS MyBase /RUN=Test().
+
+[+] It is possible to exchange columns on <tt>Ctrl+Shift+Left/Right</tt>.
+
+[+] It is possible to hide and show the column on <tt>Ctrl+H, Ctrl+Shift+H</tt>.
+
+[+] Tag's expressions and conditions are shown on more than 1 rows if it is
+    necessity in SET TAG mode (<tt>Alt+T</tt>).
+
+[+] Menu on <tt>F10</tt> in SET TAG mode.
+
+[!] The database did not open in <a href='bdbfs.htm#p32'>plug-ins</a> via command USE,
+    if the database was not in current directory.
+
+[!] Open error, when database reside in directory with point in name.
+
+[+] Clipper Tools functions CharOne, CharEven, CharOdd are allowed.
+
+[+] Interface function Out(row, col, cStr, cColor) mostly for plug-ins.
+
+[+] More full information about file are shown on <tt>F10</tt> in Filer.
+
+[!] Error in Filer when  <tt>F10</tt> was pressed and file descript.ion
+    was absent.
+
+[!] Long filenames was not shown in Filer.
+
+[!] Text files with _LF instead _CRLF was shown wrongly in VIEW mode.
+
+[+] Hot key <tt>Ctrl+Shift+F7</tt> for LOCATE backwards.
+
+[+] Some new FoxPro codepages from VFP8.
+
+[+] It is possible to define an additional condition for <a href='bdbfs.htm#p8_3'>context search</a>.
+
+[+] Additional configuration menu (System - Settings).
+
+[+] <a href='bdbfs.htm#p36'>PACK options</a>:  _lPckNoAsk - to pack without query,
+    _lPckCheck - search for deleted before PACK.
+
+[+] Selection when paste from Windows <a href='bdbfs.htm#p24'>clipboard</a>.
+
+[!] Sometimes parameter _NoAsk of <a href='bdbfs.htm#p28'>printing form</a> ignored.
+
+[!] Search for minimum was closed in menu.
+
+[*] Strings are now shown in corresponding case in conversion menu.
+
+[*] User's macros are processed before predetermined.
+
+[!] Paste from <a href='bdbfs.htm#p24'>internal clipboard</a> did not work in MEMOEDIT mode.
+
+[+] <tt>Ctrl+K</tt> - deleting up to line end, <tt>Ctrl+L</tt> - deleting word left
+    in MEMOEDIT mode.
+
+[*] Silence if <a href='bdbfs.htm#p10'>calculated expression</a> is empty.
+    The warning was shown earlier in such cases.
+
+[*] The scope of commands "REST" is default. It was "ALL" earlier.
+
+[+] First and last position in BROWSE window are marked by special symbol on
+    scroll bar.
+
+[*] Now we stay on previous record after SET FILTER if possible.
+
+<center><form><input type="button" value="Manual" onClick="window.location.href='bdbfs.htm'"></center>
+
+<P><HR>
+<b><u>16-Oct-2003	1.26b</u></b><br>
+[+] Export to MS Excel (XLS). It is accessible through menu or
+    <a href='bdbfs.htm#p33'>command line</a>. See also the <a href='bdbfs.htm#p6_1'>information about export</a>.
+
+[+] Export to XML. It is accessible through menu or
+    <a href='bdbfs.htm#p33'>command line</a>. See also the <a href='bdbfs.htm#p6_1'>information about export</a>.
+
+[+] Request for Oem to Ansi conversion when export to
+    HTML, XLS and XML. It is possible to suppress the
+    request by setting of <a href='bdbfs.htm#p6_1'>configuration's variables</a>.
+
+[+] Now it is possible to use the statements LOOP, EXIT
+    in <a href='bdbfs.htm#p16'>ini-files (plug-ins)</a>.
+
+[!] Fields with datatype "DateTime" (Visual Foxpro) were
+    wrongly shown with SET CENTURY OFF or SET DATE ANSI.
+
+[+] It is possible to use Visual FoxPro style ({^yyyy.mm.dd hh:mm})
+    for fields with datatype "DateTime" in REPLACE operations.
+
+[+] It is possible to use FoxPro 2.* style  ({})
+    for fields with datatype "Date" in REPLACE operations.
+
+[+] Visual FoxPro DATE format ({^yyyy.mm.dd}) is now available
+    in all expressions.
+
+[+] It is possible to use the symbol $ to access the fields with
+    datatype "Currency" (f.e. $CurFlds*3 or {Alt+R} $111.3).
+
+[*] DELETE/RECALL operation is accelerated.
+
+[*] Incomplete expression in "DateTime" fields are shown
+    in a VFP-like manner.
+
+[*] Expressions defined in statement #xcommand in ini-files
+    are processed more correctly in all conditions.
+
+[!] Error when data type changed in VariField.
+
+[!] Descriptions (from descript.ion) were always shown in
+    uppercase.
+
+[+] Clipper Tools functions CharRem(), CharOnly() are now
+    allowable in all expressions.
+
+[+] Menu item "E-mail me" :-).
+
+<center><form><input type="button" value="Manual" onClick="window.location.href='bdbfs.htm'"></center>
+
+<P><HR>
+<b><u>12-Jul-2003	1.25b</u></b><br>
+[+] The fields with type "Variant" (Clip and Visual FoxPro)
+    are supported.
+
+[+] The fields with type "Auto Increment" (Clip and Visual FoxPro)
+    are supported.
+
+[+] Can see Visual FoxPro database (DBC).
+
+[+] Copy/Paste Clipboard under Windows 2000/XP (the utility bdb_wclp
+    is required).
+
+[+] New parameter _NoAsk in <a href='bdbfs.htm#p28'>printing forms</a>: no any questions when
+    printing.
+
+[+] You can use some additional functions of FoxPro: CToBin(),
+    BinToC(), Id(), Sys(0), Sys(1), Sys(10), Sys(11).
+
+[!] Sometimes the sign of presence CDX was removed. It
+    provocated the problems in shared session with FoxPro.
+
+[*] SORT algorithm was changed. It results in speed increasing
+    for large databases and decreasing for small ones. Unlike
+    Clipper, the deleted records retain their deleted status
+    in sorted database.
+
+[+] New macros in dialogues: <tt>Ctrl+F5</tt> - input the value of
+    current field in quotation marks, <tt>Alt+Shift+"</tt> - quote typed text.
+
+[+] The descriptions from descript.ion are shown on the border in filer.
+
+[+] Now it's possible to use the statements PUBLIC, PRIVATE,
+    #UNDEF, EXTERNAL, MEMVAR, FIELD in <a href='bdbfs.htm#p16'>ini-files</a> (plug-ins).
+
+[+] It's possible use codeblocks in <a href='bdbfs.htm#p16_f'>statement #MACRO</a> in
+    ini-files (plug-ins).
+
+[!] Sometimes the error appeared when IF..ELSE was enclosured
+    in WHILE cycle in ini-files (plug-ins).
+
+[+] If the non-standard fields or header was detected at
+    opening of the base, propose to open the base in <a href='bdbfs.htm#p34'>forced mode</a>
+    (like command line option /forced).
+
+[*] More surely recover the structure of "forced" file at malfunctions.
+
+[!] Didn't input the negative numbers of type VFP Double.
+
+[!] Didn't input and was wrongly shown the negative numbers of
+    type VFP Currency.
+
+[!] The length of fields Currency, Double was wrongly shown
+    at displaying of structure (<tt>Alt+F2</tt>).
+
+[+] Call the site from menu.
+
+[*] More comprehensive message when bdbfs starts without
+    parameters or with parameter /?.
+
+<center><form><input type="button" value="Manual" onClick="window.location.href='bdbfs.htm'"></center>
+<P><HR>
+</body></html>

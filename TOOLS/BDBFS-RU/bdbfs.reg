@@ -1,0 +1,19 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.DBF]
+@="DBF_EDIT"
+
+[HKEY_CLASSES_ROOT\DBF_EDIT]
+@="DBF Editor for xBase professionals"
+
+[HKEY_CLASSES_ROOT\DBF_EDIT\shell]
+@=""
+
+[HKEY_CLASSES_ROOT\DBF_EDIT\shell\open]
+@=""
+
+[HKEY_CLASSES_ROOT\DBF_EDIT\shell\open\command]
+@="bdbfs.exe %1"
+
+[HKEY_CLASSES_ROOT\DBF_EDIT\DefaultIcon]
+@="bdbfs.ico"

@@ -1,0 +1,25 @@
+;THIS IS EXAMPLE OF AutoOpen FILE.
+;It is automatically read when Customer.dbf is opened.
+
+;Fields list can be defined in variable FIELDS.
+;Contrary - all fields will be visible and acceptable.
+;Fields:={'CONTACT','ADDRESS1','CITY','STATE','ZIP','TAXRATE','TOTAL_BUY','COMMENTS'}
+
+;Fields headings can be defined in variable HEADS
+HEADS:={'Registration;Code','Company','Contact name','Address line 1',;
+	'Address line 2','City','State','Zip','Tax Rate',;
+	'Total;purchase','Comments'}
+
+;Some fields can have the output pattern.
+Pictures:={,,,,,,,,,'9 999 999.99',}
+
+; It's possible to set necessary index or tag:
+;_IndexFile:="MyIndex"		//or
+;__TagNom:=3			//or
+__TagName:='STATE'
+
+
+;For other variables see Supplement 4 in BDBFS.TXT.
+;F.e. you can set filter
+;_fltrcond:='TaxRate>5.1'
+;SetFilt(_fltrcond)

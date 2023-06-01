@@ -1,0 +1,16 @@
+		NATIONAL LANGUAGES SUPPORTING.
+
+There are two versions of BDBFS now: English and Russian.
+
+Some restrictions are in English version:
+
+	- non-english field names are not supported;
+
+	- alphabetical sorting and indexing is only in ascii-order
+	  (but you can use translation tables, see dox);
+
+	- some bank-specific functions not needing (IMHO)
+	  for international users are excluded.
+
+I WANT to make versions for other languages. But I need for
+your help. Active helpers will take registration.

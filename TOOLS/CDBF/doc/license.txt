@@ -1,0 +1,147 @@
+                    LICENSE  AGREEMENT  FOR CDBF
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             Copyright (c) WhiteTown Software 1996-2002
+
+                         S H A R E W A R E
+
+This  Program  is  distributed as ShareWare: you are granted the
+right to evaluate the program for a maximum of  30  days  before
+paying the author. After the evaluation period, you are required
+to register or stop using the Program.
+
+You are encouraged to distribute  the  original  and  unmodified
+package  freely, in  any  form and on any media, provided you do
+not charge any fee for the Program itself.
+
+The Program could be included in CDROM collections, subscription
+download  areas,  BBS  packages,  provided  it  remains  in  its
+complete and unmodified original archive.
+
+In  any  case, the  user must register with the author after the
+evaluation period.
+
+The inclusion of the Program as part of a software package to be
+distributed always requires a special distribution license.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                        D I S C L A I M E R
+
+The  Program is provided on an "as is" basis without warranty of
+any kind, expressed or implied, including but not limited to the
+implied   warranties   of  merchantability  and  fitness  for  a
+particular purpose. The person using the software bears all risk
+as to the quality and performance of the Program.
+
+The  author  will  not  be  liable  for any special, incidental,
+consequential, indirect or similar damages  due  to loss of data
+or any other reason.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                     S U P P O R T   S I T E S
+http://www.whitetown.com
+http://www.dbf-editor.com
+http://www.dbf-viewer.com
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                          L I C E N S E S
+
+Personal license
+        Allows you to use CDBF by one person only (at work or at
+        home or both).
+
+Business license
+        Allows you to use CDBF by a small company on 2-10 computers.
+
+Site license
+        Allows you to use CDBF by a company on any number of
+        computers, but they must be located in one office.
+
+World-wide license
+        Allows you to use CDBF by one company on any number of
+        computers anywhere.
+
+Price-list:
+           Personal license  :   $35.00
+           Business license  :   $99.00
+           Site license      :  $199.00
+           World-wide license:  $399.00
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There are a few versions of CDBF:
+	- CDBF for Windows, GUI version
+	- CDBF for Windows, Console version
+	- CDBF for DOS, Console version
+	- CDBF for Linux, Console version
+
+Each version is on sell separatelly for an equal price.
+However, if you want to buy a bundle of CDBF different versions,
+then you can do it with a noticeable discount.
+
+Please visit our site where you can find a lot of possibilities
+to purchase CDBF:
+	http://www.whitetown.com/order.php3
+
+If you do not find a desired  bundle, then just drop us a letter,
+and we will add it for you.
+	sales@whitetown.com
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+              O R D E R I N G   I N F O R M A T I O N
+
+
+On-line registration
+
+The quickest method being ONLINE REGISTRATION via a SECURE SERVER
+with a credit card.
+
+
+Off-line registration
+
+You can also purchase and license this software via a TOLL-FREE
+Voice Order Line or by fax. The Product ID# is REQUIRED for both
+Voice and Fax orders.
+
+For details on ordering CDBF, please go to the site at:
+
+                http://www.whitetown.com/order.php3
+
+
+When making an  order, please have your credit  card, postal address
+and e-mail address ready and be  sure to enter your correct personal
+information.  After  placing  your   order  with  the  Registrar,  a
+registration code which transforms  your evaluation version into the
+full version will be delivered  via e-mail within 48 hours (normally
+12  hours),   provided  that  there   are  no  problems   with  your
+registration data.
+
+If you  don't receive your  code within  48 hours, please  e-mail to
+sales@whitetown.com  as there  is most  likely a  problem with  your
+registration.
+
+For more registration information  and the latest price information,
+contact:
+Sergey Chehuta
+Email: sales@whitetown.com
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  I N F O R M A T I O N   F O R   R E G I S T E R E D   U S E R S
+
+
+If you are a registered user of any version of CDBF, then you can buy
+another versions for a lower price.
+
+Just drop us a letter and we will give you a special registration link.
+	sales@whitetown.com
+
+If you  are a  registered user of  CDBF for DOS  2.23 or  an earlier
+version, or if you are a registered user of CDBF for Windows 1.05 or
+an earlier version, you can get  a registration key file for free by
+emailing your name,  address and  registration date to the following
+email address:
+	sales@whitetown.com

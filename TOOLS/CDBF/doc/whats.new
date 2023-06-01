@@ -1,0 +1,152 @@
+============ CDBF is 32bit now. ===============
+==                                           ==
+==  Available versions:                      ==
+==           [x]   Win32 GUI                 ==
+==           [x]   Win32 console             ==
+==           [x]   DOS32                     ==
+==           [x]   Linux                     ==
+==                                           ==
+===============================================
+
+Version 2.99.02
+
++ You can now save structure of DBF file using XML syntax
+  in the dialog "Fields info".
++ You can now  save structure of DBF file using MIVA syntax
+  in the dialog "Fields info".
++ Some bugs were fixed.
++ An Export to CSV has been added.
++ A new "Save As" command has been added to the File menu.
+  It is similar to Export but uses the default settings and
+  does not ask for any infomration. Use it to quickly save
+  a database in different formats.
++ You can now edit the header of a database in hex-editor.
+  Do not use this feature without real necessity!
++ You can now define other translation tables in .INI file.
++ An Export to XML has been added.
+
+
+
+
+Version 2.99.01
+
++ This version has been completely rewritten.
+
++ A pull-down menu has been added.
+  * F9     : last item
+  * Alt-F  : File
+  * Alt-V  : View
+  * Alt-E  : Edit
+  * Alt-M  : Commands
+  * Alt-T  : Tools
+  * Alt-O  : Favorites
+  * Alt-H  : Help
+
++ All dialogs have more options.
+  * F4 calls up the "Open dialog box" while editing a string.
+  * F4 opens the listbox when one is in focus.
+
++ Highlighting of field names.
+
++ Filter hides records instead of highlighting.
+  * If the current number/total number in the status bar is highlighted,
+    it means that a filter is installed.
+
++ Ctrl+D hides or shows deleted records.
+  * Menu View-Hide deleted records.
+
++ Keyboard macroses: Ctrl+. [ Any Keys ] Ctrl+. HotKey
+  * Use Ctrl+. Ctrl+. HotKey to delete a macro.
+
++ New function Menu Tools-Encoding has been added.
+  * You can now code/encode a database.
+
++ New function "Append from DBF file" has been added.
+  You can now append records from a .txt or .dbf file.
+
++ Opening of multiple files is now possible.
+  * Use Ctrl-Tab, Ctrl-Shift-Tab, Alt-0 to switch between files.
+  * The number of the database is shown in the upper left.
+
++ Favorites
+  * Provides quick access to your most important files.
+
++ Autodetect OEM/Ansi
+
++ In the "Field info" dialog you can write the structure to a file
+  in TXT, PRG, SQL, HTML, or DBF format.
+
++ In the "Database info" dialog you can:
+  - copy information to the clipboard (Windows version).
+  - write information to a file (other versions).
+
++ New function "Quick filter" has been added. You can filter a
+  table by any value in the current column.
+  HotKey - Ctrl-E (Ctrl-Shift-E).
+
++ You can now select several columns and rows: Grey *.
+  Then you can:
+   - clear a few selected cells.
+   - cut  or copy a few  selected cells into the clipboard and then
+     paste them into other programs (like Excel or Word) and vice
+     versa.
+   - paste a few columns and rows from the clipboard.
+
++ You can now select records and perform certain operations on these
+  records: Export, Sum, Delete, Recall, Invert, Fill.
+
++ You can now display only records which were selected.
+  It works as a filter.
+
++ New features in the function "Fill".
+  You can now fill a field with a variable value.
+  You can now fill records with specified numbers.
+
++ You can now export information from a database to
+  TXT, PRG, SQL, HTML or DBF format.
+  * Menu Tools-Export.
+
++ CDBF can read names of databases and names of fields from 1Cv7.DD
+  and show them.
+
++ CDBF is unable to print directly to a printer. Instead, you can
+  export information to a text file and then print it.
+
++ CDBF keeps settings in a text file CDBF.INI.
+  
++ CDBF keeps the history in a text file CDBF.HST.
+
++ CDBF can correct most errors of errors in the header of a
+  database.
+
++ In the "Columns" dialog box you can now:
+  - hide a field or fields
+  - make fields read-only
+  - change the order of fields
+  - freeze a field or fields (only in browse mode)
+
++ CDBF can save aliases in OEM (DOS) or ANSI (Windows) codepage
+  character sets. Press F12 to switch to the "Field Info" dialog box.
+
++ CDBF can detect the charset of a header automatically.
+
++ Press Shift-F12 to change the charset of a header.
+
++ Press Enter in a memo field to open the memo editor.
+
++ While editing the structure of a database you can:
+  - save the structure in a .dbf file
+  - read the structure from a .dbf file
+  - set an optimal width for character fields
+
+
+........................
+
+- Some minor features have been disabled in this version.
+- There is currently no mouse support.  
+
+
+--
+Copyright (c) WhiteTown Software, 1996-2002
+WWW:    http://www.whitetown.com
+Email:     support@whitetown.com

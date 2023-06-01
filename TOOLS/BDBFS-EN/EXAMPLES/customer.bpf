@@ -1,0 +1,131 @@
+;		Automatic report's generation.
+;Could be activated from menu "Base" -> "Read report template" or
+;from command line (bdbfs customer /print)
+
+;_aExpr - array of expressions for each column.
+; If not defined - use all fields.
+_aExpr:={'Contact','TRIM(Address1)+" "+TRIM(address2)+", "+TRIM(City)',;
+	 'company','taxrate','total_buy'}
+
+;_aHead - array of column's headings. Default == _aExpr.
+;Symbol ; means head's breaking
+_aHead:={'Customer','Contact address', 'Company', 'TaxRate',;
+	 'Overall;purchase'}
+
+;_aPict - array of pictures (patterns) for each column.
+_aPict:={, , ,'99.99','999,999,999.99'}
+
+;_aElen - array of column's widths. 
+_aElen:={20,20,15}
+;Default width of a column is defined as maximal between width of
+;column's heading and _aPict for this column. If width of a
+;field is more than width of a column, it is made correct carry (up to
+;10 lines in a column) on separators:  space,tabulation, .,;?!
+
+
+;_aTitle  - report title. Default - nothing. Can be given as a
+;	    string or array of strings.
+;_aTitle := 'CUSTOMER REPORT'
+_aTitle:={'CUSTOMER REPORT',"OF OUR LOVELY COMPANY"}
+
+;_cFile - output file. Default - database name + '.PRN'.
+_cFile:='customer.txt'
+
+;_aSum - array of necessity of summation for each column.
+_aSum:={.F.,.F.,.F.,.F.,.T.}
+
+;_fCondit - print condition.
+_fCondit:='TaxRate>5'
+
+;_aFooter - name of additional procedure printing a form footer or
+;	    array containing the footer.
+_aFooter:={'', DTOC(Date())+' '+Time(),'Our_Best_Seller_Company'}
+
+
+;_aGroup - array specifying report group.
+;	 Structure of a array:
+;	 {
+;	 <Expression of grouping>,;
+;	 [<an array or block for a printing of group heading>],;
+;	 [<an array or block for a printing of group footer>]
+;	 [<logical: print the group sum only if more than 1 element
+;	   are in group>]
+;	 }.
+;	Default for group heading:
+;		'Code' + <Expression of a grouping>.
+;	Default for group footer: "Total:".
+;	Default for a printing of the sum: .F. (to print the sum
+;	always).
+_aGroup:={'State',{|| CHR(13)+CHR(10)+'State: '+State},;
+	 {' Total on state'} ,.T.}
+
+;_aPage - array specifying grouping on page.
+;	Structure:
+;	{
+;	 [<an array or block for a printing of page heading>],;
+;	 [<an array or block for a printing of page footer>]
+;	}.
+;If it's defined, the totals of page are printed.
+_aPage:={ {'============',Time(),'============'},}
+
+;_pEveryStep - name of additional procedure or block called
+;	      before a printing of each line satisfying to a
+;	      condition _fCondit
+
+;_nDouble - attribute of necessity of a printing in two columns on a sheet.
+;	    If 0 or is not given - one is printed. Numerical parameter
+;	    is perceived as amount of blanks between two columns.
+_nDouble:=0
+
+;_NoShow - don't offer a file for viewing and printing.
+;_NoShow:=.T.
+
+;_NoAsk - no any questions.
+;_NoAsk:=.T.
+
+;cDivideT, cDivide - delimiter of columns in the header and
+;		     information lines accordingly (default - ':').
+cDivideT:='!'
+cDivide :=':'
+
+;_nCounter - if > 0, a serial line number is printed at the left
+;	    side of sheet (with width _nCounter).
+_nCounter:=5
+
+;CountName - name of a column for serial number (default "N/N"). It is
+;	     meaningful only if _nCounter > 0 is given.
+CountName:='ü/ü'
+
+
+;Following variables can be additionally adjusted directly from
+;the programs (<F9> in "To File or To Print" dialogue).
+
+;Whether to print the standard title
+	_NeedMainHead	= .F.
+;Title on each page
+	_lTitleAll	= .F.
+;Header on each page
+	_NeedHeadPage	= .T.
+;Numeric headers on 1st page
+	_lDgtHdr	= .F.
+;Numeric headers on other pages
+	_lHdAll		= .T.
+;Page numbers
+	_NeedPrPage	= .T.
+;Title  
+;Page eject after each sheet
+	_NeedEject	= .F.
+;Starting sequence of the printer
+	_PSCode		= "chr(27)+'M'"
+;Final sequence of the printer
+	_PECode		= "chr(18)"
+;Report left margin
+	_LMargin	= 0
+;Page length (0=tape)
+	_Plength	= 60
+;Whether to print of zero values, default - .F.
+	_PrintZero:=.T.
+;The printer device
+	_printer	= 'PRN'
+;Whether to append to the output file (default - rewrite).
+	_NeedApFile	= .F.
