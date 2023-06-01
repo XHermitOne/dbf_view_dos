@@ -20,7 +20,7 @@ except ImportError:
     print(u'For install: pip3 install rich')
     sys.exit(2)
 
-__version__ = (0, 0, 0, 1)
+__version__ = (0, 0, 0, 3)
 __author__ = 'xhermit'
 
 DEBUG_MODE = True
@@ -196,7 +196,7 @@ def saveTextFile(txt_filename, txt='', rewrite=True):
 
 
 PACKAGENAME = 'dbf-view-dos'
-PACKAGE_VERSION = '0.1'
+PACKAGE_VERSION = '0.3'
 LINUX_VERSION = '-'.join([str(x).lower() for x in getOSVersion()[:-1]])
 LINUX_PLATFORM = 'all'  # 'amd64' if is64Linux() else 'i386'
 DEPENDS = ', '.join(('dosbox', ))
