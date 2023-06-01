@@ -9,9 +9,11 @@ Use:
 dbf_view_dos [options] --dbf_filename=/path/to/dbf/file
 
 Options:
-    --viewer=   DBF viewer. CDBF/BDBFS-EN/BDBFS-RU
-    --no-exit   Don't exit of dosbox automatically
-    --no-wait   Don't wait for dosbox to exit
+    --help|-h|-?    Program help
+    --version|-v    Program version
+    --viewer=       DBF viewer. CDBF/BDBFS-EN/BDBFS-RU
+    --no-exit       Don't exit of dosbox automatically
+    --no-wait       Don't wait for dosbox to exit
 """
 
 import sys
