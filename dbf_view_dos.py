@@ -30,9 +30,9 @@ import os.path
 import platform
 import getopt
 
-__version__ = (0, 0, 0, 3)
+__version__ = (0, 0, 0, 4)
 
-DOSBOX_CMD_FMT = 'dosbox -c \"mount C: %s\" -c \"mount D: /usr/share/dbf_view_dos\" -c \"D:\\rk.com\" -c "D:\\%s %s" %s %s'
+DOSBOX_CMD_FMT = 'dosbox -c \"mount C: %s\" -c \"mount D: /mnt\" -c \"mount E: /media\" -c \"mount X: /usr/share/dbf_view_dos\" -c \"X:\\rk.com\" -c "X:\\%s %s" %s %s'
 
 DOSBOX_CMD_OPTION_EXIT = '-c "exit"'
 
@@ -104,7 +104,7 @@ def main(*argv):
             home_path = getHomePath()
             exit_option = DOSBOX_CMD_OPTION_EXIT if do_exit else ''
             wait_option = '' if do_wait else DOSBOX_CMD_OPTION_NOWAIT
-            dos_dbf_filename = dbf_filename.replace(home_path, 'C:\\').replace(os.path.sep, '\\')
+            dos_dbf_filename = dbf_filename.replace(home_path, 'C:\\').replace('/mnt/', 'D:\\').replace('/media/', 'E:\\').replace(os.path.sep, '\\')
             cmd = DOSBOX_CMD_FMT % (home_path, viewer_option, dos_dbf_filename, exit_option, wait_option)
             print(u'Run command <%s>' % cmd)
             os.system(cmd)
