@@ -14,6 +14,14 @@ Options:
     --viewer=       DBF viewer. CDBF/BDBFS-EN/BDBFS-RU
     --no-exit       Don't exit of dosbox automatically
     --no-wait       Don't wait for dosbox to exit
+
+[NOTE]
+To change the size of the dosbox window,
+you need to set the options in the configuration file ~/.dosbox/dosbox-0.74-3.conf:
+
+windowresolution=1280x960
+output=opengl
+
 """
 
 import sys
